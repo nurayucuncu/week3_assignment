@@ -1,0 +1,16 @@
+package com.example.week3_assignment.model
+
+import androidx.compose.runtime.Immutable
+
+enum class DeviceCategory { LIGHT, CAMERA, THERMOSTAT, VACUUM }
+
+@Immutable
+data class DeviceItem(
+    val id: Int,
+    val name: String,
+    val category: DeviceCategory,
+    val room: String,
+    val isOnline: Boolean,
+    val isActive: Boolean,
+    val powerWatts: Double
+)
